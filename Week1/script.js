@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Utility: Check if day is singular or plural
   function formatDaysDisplay(days) {
-    return `You have lived ${days.toLocaleString()} ${
+    return `${days.toLocaleString()} ${
       days > 1 ? "days" : "day"
     }`;
   }
