@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="">
+    <div class="result">
+      <div class="history" id="history"></div>
+      <div class="current-result" id="display"></div>
+
+      <div class="buttons" id="button-container">
+        <button data-value="x^3" class="scientific hidden">cube</button>
+        <button data-value="x^2" class="scientific hidden">sqr</button>
+        <button data-value="sin(" class="scientific hidden" id="sine">
+          sin
+        </button>
+        <button data-value="cos(" class="scientific hidden">cos</button>
+        <button data-value="tan(" class="scientific hidden">tan</button>
+        <button data-value="^" class="scientific hidden">^</button>
+        <button data-value="log(" class="scientific hidden">lg</button>
+        <button data-value="ln(" class="scientific hidden">ln</button>
+        <button data-value="(" class="scientific hidden">(</button>
+        <button data-value=")" class="scientific hidden">)</button>
+        <button data-value="√(" class="scientific hidden">√</button>
+        <button data-value="AC" class="accent" id="clear">AC</button>
+        <button data-value="del" class="accent">X</button>
+        <button data-value="%" class="accent">%</button>
+        <button data-value="/" class="accent">/</button>
+        <button data-value="x!" class="scientific hidden">x!</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="*" class="accent">*</button>
+        <button data-value="1/x" class="scientific hidden">1/x</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="-" class="accent">-</button>
+        <button data-value="π" class="scientific hidden">π</button>
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="+" class="accent">+</button>
+        <button data-value="tgle" class="accent" id="toggle-sci">tgle</button>
+        <button data-value="e" class="scientific hidden">e</button>
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button data-value="=" class="equals">=</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
