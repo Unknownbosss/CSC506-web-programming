@@ -15,6 +15,7 @@ This is a practical-based course where students are expected to complete weekly 
 | <center>WEEKS</center> | <center>TITLE</center>              | <center>LIVE LINK</center>                               |
 | ---------------------- | ----------------------------------- | -------------------------------------------------------- |
 | <center>1</center>     | [Simple Registration Form](./Week1) | [Live Preview](https://registration-form-j.netlify.app/) |
+| <center>2</center>     | [Functional Calculator](./Week2)    | [Live Preview](https://group8cal.netlify.app/)           |
 
 > _Note: Click any link above to view that week's project or folder or its live link._
 
@@ -31,8 +32,8 @@ This is a practical-based course where students are expected to complete weekly 
 
 ## 👨‍💻 Team Members
 
-| ID Number    |
-| ------------ |
+| ID Number                                    |
+| -------------------------------------------- |
 | [CSC/20D/4121](https://www.linkedin.com/in/) |
 | [CSC/20D/4159](https://www.linkedin.com/in/) |
 | [CSC/20D/4107](https://www.linkedin.com/in/) |

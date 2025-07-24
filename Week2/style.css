@@ -24,7 +24,6 @@ body.dark {
 body {
   background-color: var(--bg-color);
   font-family: var(--font-family);
-  /* height: 100dvh; */
   display: flex;
   justify-content: center;
   align-items: center;

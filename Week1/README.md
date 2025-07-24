@@ -38,7 +38,13 @@ To demonstrate frontend development mastery by creating a well-structured, user-
 
 ## ✅ How to Use
 
-1. Clone or download the repository
+1. **Clone the Week 1 folder** from GitHub:
+
+   ```bash
+   git clone https://github.com/Unknownbosss/CSC506-web-programming.git
+   cd CSC506-web-programming/Week1
+
+   ```
 2. Open `index.html` in any modern browser
 3. Fill the form and test interactivity
 
