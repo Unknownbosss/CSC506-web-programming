@@ -1,15 +1,14 @@
 // wait for dom content to load
 document.addEventListener("DOMContentLoaded", () => {
-
   const display = document.getElementById("display");
   const clearButton = document.getElementById("clear");
   const history = document.getElementById("history");
   const buttons = document.querySelectorAll("button");
   const gridButtons = document.getElementById("button-container");
   const toggleSci = document.getElementById("toggle-sci");
+  const theme = document.getElementById("theme");
 
   // autoscroll to bottom to view calculator by default
-  gridButtons.scrollTo({ top: gridButtons.scrollHeight, behavior: "smooth" });
   let expression = { question: "", answer: "" };
   let overAllHistory = [];
   let lastPressed = "";
@@ -177,8 +176,14 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const val = button.dataset.value;
       if (val) handleInput(val);
-      console.log(expression);
     });
+  });
+
+  theme.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    theme.textContent = document.body.classList.contains("dark")
+      ? "light"
+      : "dark";
   });
   updateDisplay();
 });
