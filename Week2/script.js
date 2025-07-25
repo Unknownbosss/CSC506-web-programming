@@ -190,5 +190,39 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>`
       : `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`;
   });
+  // ======= KEYBOARD SUPPORT =======
+  document.addEventListener("keydown", (e) => {
+    
+    const keyMap = {
+      "0": "0", "1": "1", "2": "2", "3": "3",
+      "4": "4", "5": "5", "6": "6", "7": "7",
+      "8": "8", "9": "9",
+      ".": ".",            
+      "+": "+", "-": "-",
+      "*": "*",            
+      "/": "/",            
+      "%": "%", "^": "^",
+      "(": "(", ")": ")",
+      "Enter": "=",        
+      "=": "=",
+      "Backspace": "del",  
+      "Delete": "AC",      
+      "Escape": "AC",      
+      "c": "C", "C": "C"   
+    };
+
+    // if it's not in our map, ignore
+    if (!(e.key in keyMap)) return;
+
+    e.preventDefault();
+
+    let val = keyMap[e.key];
+
+    // special cases: convert JS-style * and / to your display symbols
+    if (val === "*") val = "×";
+    if (val === "/") val = "÷";
+
+    handleInput(val);
+  });
   updateDisplay();
 });
