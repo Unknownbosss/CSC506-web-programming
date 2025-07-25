@@ -75,6 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function factorial(n) {
+    if (n < 0) return "Error"; // factorial is not defined for negative numbers
+    if (n === 0 || n === 1) return 1;
+    return n * factorial(n - 1);
+  }
+
   function handleInput(value) {
     const operators = ["+", "-", "*", "/", "x"];
     if (value === "=") {
@@ -102,11 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isNaN(num) || num < 0) {
           expression.question = "Error";
         } else {
-          let fact = 1;
-          for (let i = 2; i < num; i++) {
-            fact *= i;
-            expression.answer = fact.toString();
-          }
+          let fact = factorial(num);
+          expression.answer = fact.toString();
         }
       } catch (err) {
         expression.question = "Error";
